@@ -23,4 +23,4 @@ class WorkuaSpider(scrapy.Spider):
 
             yield people_item
             # Video stopped at 1:37:11 https://youtu.be/AQwGH9NxPzI?t=5831
-            # home task https://lms.ithillel.ua/groups/5ef4bcb08fe7c632ee2b025a/homeworks/60190c09ec14345055542e4f
+            # home task https://lms.ithillel.ua/groups/5ef4bcb08fe7c632ee2b025a/homeworks/60190c09ec14345055542e4f # noqa: E501

@@ -15,6 +15,6 @@ class ScrapyWorkuaItem(scrapy.Item):
 
 class PeopleItem(Item):
 
-        name = Field()
-        age = Field()
-        position = Field()
+    name = Field()
+    age = Field()
+    position = Field()

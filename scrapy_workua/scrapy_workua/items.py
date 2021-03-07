@@ -18,3 +18,4 @@ class PeopleItem(Item):
     name = Field()
     age = Field()
     position = Field()
+    detail_info = Field()

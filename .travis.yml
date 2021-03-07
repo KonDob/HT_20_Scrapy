@@ -8,4 +8,4 @@ install:
   - poetry install
 
 script:
-  - flake8 --ignore=F401, E265 --exclude=migrations
+  - flake8 --ignore=F401 E265 --exclude=migrations

@@ -33,6 +33,11 @@ class WorkuaSpider(Spider):
                               'people_item': people_item,
                           })
 
+            next_page_uri = response.css('ul.pagination-small li a::attr(href)').getall() # noqa
+            if next_page_uri:
+                next_page_url = self.site_url + next_page_uri[-1]
+                yield Request(next_page_url)
+
     def parse_detail_page(self, response):
         detail_info = response.xpath('//p[@id="addInfo"]/text()').getall()
         people_item = response.meta['people_item']
